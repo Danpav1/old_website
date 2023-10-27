@@ -5,7 +5,7 @@ body {
 
 .center {
   margin: auto;
-  width: 80%;
+  width: 40%;
   padding: 10px;
   text-align: center;
   border: 1px solid white;
@@ -35,10 +35,6 @@ body {
   border: 1px solid rgba(24,38,78);
 }
 
-.aboutMe {
-
-}
-
 #aboutMeHeader {
   font-family: Helvetica;
   color:ghostwhite;
@@ -46,6 +42,18 @@ body {
 }
 
 #aboutMeParagraph {
+  font-family: Verdana;
+  color:white;
+  font-size: 15px;
+}
+
+#experienceHeader {
+  font-family: Helvetica;
+  color:ghostwhite;
+  font-size: 23px;
+}
+
+#experienceList {
   font-family: Verdana;
   color:white;
   font-size: 15px;
