@@ -1,3 +1,52 @@
 body {
   background-color: rgb(8,12,28);
+  margin:50px10px
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.left {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid white;
+}
+
+#nameHeader {
+  font-family: Helvetica;
+  color:ghostwhite;
+  font-size: 36px;
+}
+
+.nameInner {
+  font-family: Verdana;
+  color:white;
+  font-size: 17px;
+}
+
+.horizontalRule {
+  border: 1px solid rgba(24,38,78);
+}
+
+.aboutMe {
+
+}
+
+#aboutMeHeader {
+  font-family: Helvetica;
+  color:ghostwhite;
+  font-size: 23px;
+}
+
+#aboutMeParagraph {
+  font-family: Verdana;
+  color:white;
+  font-size: 15px;
 }
