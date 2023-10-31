@@ -32,6 +32,10 @@ body {
   margin-top:100px;
 }
 
+.top-bufferExperience {
+  margin-top:12px;
+}
+
 .nameSection {
   border: 1px solid white;
   text-align: left;
@@ -89,8 +93,22 @@ body {
 
 #experienceHeader {
   font-family: "AxiformaBold", Helvetica;
-  color:ghostwhite;
-  font-size: 28;
+  color:white;
+  font-size: 28px;
+}
+
+#schreiberHeader {
+  font-family: "AxiformaBold", Helvetica;
+  color:white;
+  font-size: 19px;
+  line-height: 90%;
+}
+
+#schreiberList {
+  font-family: "AxiformaLight", Helvetica;
+  color:white;
+  font-size: 21px;
+  line-height: 175%;
 }
 
 #experienceList {
@@ -99,3 +117,4 @@ body {
   font-size: 21px;
   line-height: 175%;
 }
+
