@@ -5,6 +5,7 @@
   --LIGHTBLUE_COLOR: rgba(209,230,254,255);
   --OFFWHITE_COLOR: rgba(209,230,254,255);
   --DEEPPURPLE_COLOR: rgb(8,12,28);
+  --LIGHTPURPLE_COLOR: #38456C;
 
 }
 
@@ -58,19 +59,21 @@ body {
   font-family: "AxiformaBold", Helvetica;
   color:var(--HEADER_COLOR);
   font-size: 36px;
+  line-height: 135%;
 }
 
 #positionHeader {
   font-family: "AxiformaBold", Helvetica;
   color:var(--LIGHTBLUE_COLOR);
   font-size: 30px;
+  line-height: 135%;
 }
 
 #nameInner {
   font-family: "AxiformaLight", Helvetica;
   color:rgba(219,221,231,255);
   font-size: 17px;
-  line-height: 175%;
+  line-height: 140%;
 }
 
 .customHorizontalRule {
@@ -116,5 +119,31 @@ body {
   color:white;
   font-size: 21px;
   line-height: 175%;
+}
+
+#skillsHeader {
+  font-family: "AxiformaBold", Helvetica;
+  color:white;
+  font-size: 28px;
+}
+
+.skill {
+  font-family: "AxiformaBold", Helvetica;
+  color:white;
+  font-size: 19px;
+  line-height: 175%;
+  border: 2px solid var(--LIGHTPURPLE_COLOR);
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 300%;
+  border-radius: 7px;
+}
+
+#projectHeader {
+  font-family: "AxiformaBold", Helvetica;
+  color:white;
+  font-size: 28px;
 }
 
