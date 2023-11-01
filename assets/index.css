@@ -42,19 +42,6 @@ body {
   text-align: left;
 }
 
-.center {
-  margin: auto;
-  width:55%;
-  padding: 10px;
-  text-align: center;
-}
-
-.left {
-  margin: auto;
-  padding: 10px;
-  text-align: left;
-}
-
 #nameHeader {
   font-family: "AxiformaBold", Helvetica;
   color:var(--HEADER_COLOR);
@@ -147,3 +134,24 @@ body {
   font-size: 28px;
 }
 
+#contactHeader {
+  font-family: "AxiformaBold", Helvetica;
+  color:white;
+  font-size: 28px;
+}
+
+#contactInner {
+  font-family: "AxiformaLight", Helvetica;
+  color:rgba(219,221,231,255);
+  font-size: 17px;
+  line-height: 140%;
+}
+
+.card-body {
+  font-family: "AxiformaBold", Helvetica;
+  color:white;
+}
+
+.cardBuffer {
+  padding-bottom: 25px;
+}
