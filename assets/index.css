@@ -156,11 +156,17 @@ body {
   padding-bottom: 25px;
 }
 
-.footerBuffer {
-  margin-top:20px;
+.footer {
+  margin-top:60px;
+  margin-bottom: 100px;
 }
 
 #mailButton {
+  font-family: "AxiformaBold";
+  font-size: 24px;
+}
+
+#resumeButton {
   font-family: "AxiformaBold";
   font-size: 24px;
 }
