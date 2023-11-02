@@ -11,6 +11,8 @@
 
 /* constands end */
 
+/* fonts start */
+
 @font-face {
   font-family: "AxiformaBold";
   src: url(fonts/Axiforma-Bold.ttf) format("truetype");
@@ -23,23 +25,32 @@
   font-style: normal;
 }
 
+/* fonts end */
+
+/* start custom elements */
+
+.customHorizontalRule {
+  border: 1px solid #37456c;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+
+.customHorizontalRuleProject {
+  border: 1px solid #37456c;
+  border-radius: 5px;
+  margin-bottom:55px;
+}
+
+/* end custom elements */
 
 body {
   background-color:var(--DEEPPURPLE_COLOR);
   line-height: 125%;
 }
 
-.top-buffer {
+#nameSection {
   margin-top:100px;
-}
-
-.top-bufferExperience {
-  margin-top:12px;
-}
-
-.nameSection {
-  border: 1px solid white;
-  text-align: left;
 }
 
 #nameHeader {
@@ -63,28 +74,29 @@ body {
   line-height: 140%;
 }
 
-.customHorizontalRule {
-  border: 1px solid #37456c;
-  border-radius: 5px;
-}
+/* -- new section -- */
 
 #aboutMeHeader {
   font-family: "AxiformaBold", Helvetica;
   color:ghostwhite;
   font-size: 28px;
+  margin-bottom: 20px;
 }
 
-#aboutMeParagraph {
+.aboutMeParagraph {
   font-family: "AxiformaLight", Helvetica;
   color:white;
   font-size: 21px;
   line-height: 175%;
 }
 
+/* -- new section -- */
+
 #experienceHeader {
   font-family: "AxiformaBold", Helvetica;
   color:white;
   font-size: 28px;
+  margin-bottom: 20px;
 }
 
 #schreiberHeader {
@@ -92,13 +104,14 @@ body {
   color:white;
   font-size: 19px;
   line-height: 90%;
+  margin-bottom: 20px;
 }
 
 #schreiberList {
   font-family: "AxiformaLight", Helvetica;
   color:white;
   font-size: 21px;
-  line-height: 175%;
+  line-height: 65%;
 }
 
 #experienceList {
@@ -108,10 +121,13 @@ body {
   line-height: 175%;
 }
 
+/* -- new section -- */
+
 #skillsHeader {
   font-family: "AxiformaBold", Helvetica;
   color:white;
   font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .skill {
@@ -128,23 +144,13 @@ body {
   border-radius: 7px;
 }
 
+/* -- new section -- */
+
 #projectHeader {
   font-family: "AxiformaBold", Helvetica;
   color:white;
   font-size: 28px;
-}
-
-#contactHeader {
-  font-family: "AxiformaBold", Helvetica;
-  color:white;
-  font-size: 28px;
-}
-
-#contactInner {
-  font-family: "AxiformaLight", Helvetica;
-  color:rgba(219,221,231,255);
-  font-size: 17px;
-  line-height: 140%;
+  margin-bottom: 20px;
 }
 
 .card-body {
@@ -156,9 +162,62 @@ body {
   padding-bottom: 25px;
 }
 
-.footer {
-  margin-top:60px;
-  margin-bottom: 100px;
+.card-container {
+  position: relative;
+  border: 3px solid #38456C;
+}
+
+.blur-image {
+  position: relative;
+}
+
+.blur-image img {
+  width: 100%;
+  filter: blur(0); /* Initialize blur to 0 (no blur) */
+  transition: filter 0.3s; /* Add a smooth transition for the blur effect */
+}
+
+.card-container .centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "AxiformaBold";
+  color: white;
+  font-size: 19px;
+  line-height: 125%;
+  z-index: 2; /* Place the text above the blur effect */
+  pointer-events: none;
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s; /* Add a smooth opacity transition */
+}
+
+.card-container:hover .blur-image img {
+  filter: blur(5px); /* Apply a blur effect to the image on hover */
+}
+
+.card-container:hover .centered-text {
+  opacity: 1; /* Show the text on hover */
+}
+
+/* -- new section -- */
+
+#contactHeader {
+  font-family: "AxiformaBold", Helvetica;
+  color:white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#contactInner {
+  font-family: "AxiformaLight", Helvetica;
+  color:rgba(219,221,231,255);
+  font-size: 17px;
+  line-height: 140%;
+}
+
+.buttonBuffer {
+  margin-top: 10px;
 }
 
 #mailButton {
@@ -193,43 +252,10 @@ body {
   border-color: #0e5bea;
 }
 
-.buttonBuffer {
-  margin-top: 10px;
+/* -- new section -- */
+
+.footer {
+  margin-top:120px;
+  margin-bottom: 45px;
 }
 
-
-.card-container {
-  position: relative;
-  border: 3px solid #38456C; /* Add the colored border */
-}
-
-.blur-image {
-  position: relative;
-}
-
-.blur-image img {
-  width: 100%;
-  filter: blur(0); /* Initialize blur to 0 (no blur) */
-  transition: filter 0.3s; /* Add a smooth transition for the blur effect */
-}
-
-.card-container .centered-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 16px;
-  z-index: 2; /* Place the text above the blur effect */
-  pointer-events: none;
-  opacity: 0; /* Initially hide the text */
-  transition: opacity 0.3s; /* Add a smooth opacity transition */
-}
-
-.card-container:hover .blur-image img {
-  filter: blur(5px); /* Apply a blur effect to the image on hover */
-}
-
-.card-container:hover .centered-text {
-  opacity: 1; /* Show the text on hover */
-}
