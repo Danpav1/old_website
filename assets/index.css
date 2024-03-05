@@ -260,15 +260,17 @@ body {
 }
 
 .modal-content {
-  background-color: var(--LIGHTBLUE_COLOR);
-  border: 2px solid var(--LIGHTPURPLE_COLOR);
+  background-color: rgba(50, 50, 50, 1);
+  border: 2px solid black;
 }
 
 
 .modal-header {
   font-family: "AxiformaBold", Helvetica;
-  color:black;
-  font-size: 15px;
+  background-color: var(--LIGHTPURPLE_COLOR);
+  border-color: rgba(255,255,255,0.1);
+  color:white;
+  font-size: 38px;
 }
 
 .modal-title {
@@ -277,14 +279,16 @@ body {
 
 .modal-body {
   font-family: "AxiformaLight", Helvetica;
-  color:black;
+  color:white;
   font-size: 21px;
   line-height: 1.6;
 }
 
 .modal-footer {
+  border-color: rgba(255,255,255,0.1);
+  background-color: var(--LIGHTPURPLE_COLOR);
   font-family: "AxiformaBold", Helvetica;
-  color:black;
+  color:white;
   font-size: 28px;
 }
 
@@ -293,6 +297,6 @@ body {
 }
 
 .modal-pic {
-  border: 2px solid var(--LIGHTPURPLE_COLOR);
+  border: 2px solid rgba(255,255,255,0.1);
 }
 
