@@ -219,7 +219,7 @@
               
         <div class="row">
           <div class="offset-2 col-2">
-            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#unixShellModal">
+            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#unixShellModalHorizontal">
               <div class="blur-image">
                 <img src="assets/images/shell.jpg" class="card-img" alt="placeholder">
               </div>
@@ -227,7 +227,7 @@
             </div>
           </div>
           <div class="col-2">
-            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#portfolioWebsiteModal">
+            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#portfolioWebsiteModalHorizontal">
               <div class="blur-image">
                 <img src="assets/images/portfolio.jpg" class="card-img" alt="placeholder">
               </div>
@@ -235,7 +235,7 @@
             </div>
           </div>
           <div class="col-2">
-            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#humansAliensGameModal">
+            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#humansAliensGameModalHorizontal">
               <div class="blur-image">
                 <img src="assets/images/game.jpg" class="card-img" alt="placeholder">
               </div>
@@ -243,7 +243,7 @@
             </div>
           </div>
           <div class="col-2">
-            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#mazeSolverModal">
+            <div class="card-container d-none d-lg-block d-xl-block text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#mazeSolverModalHorizontal">
               <div class="blur-image">
                 <img src="assets/images/mazesolver.jpg" class="card-img" alt="placeholder">
               </div>
@@ -254,17 +254,19 @@
         
               
         <!-- xs, sm, md -->
-        <div class="offset-3 col-6">
-          <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#unixShellModal">
-            <div class="blur-image">
-              <img src="assets/images/shell.jpg" class="card-img" alt="placeholder">
+        <div class="row cardBuffer">
+          <div class="offset-3 col-6">
+            <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#unixShellModalVertical">
+              <div class="blur-image">
+               <img src="assets/images/shell.jpg" class="card-img" alt="placeholder">
+              </div>
+              <span class="centered-text">Unix Shell</span>
             </div>
-            <span class="centered-text">Unix Shell</span>
-           </div>
+          </div>
         </div>
         <div class="row cardBuffer">
           <div class="offset-3 col-6">
-            <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded"  data-bs-toggle="modal" data-bs-target="#portfolioWebsiteModal">
+            <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded"  data-bs-toggle="modal" data-bs-target="#portfolioWebsiteModalVertical">
               <div class="blur-image">
                 <img src="assets/images/portfolio.jpg" class="card-img" alt="placeholder">
               </div>
@@ -274,7 +276,7 @@
         </div>
         <div class="row cardBuffer">
           <div class="offset-3 col-6">
-            <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#humansAliensGameModal">
+            <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#humansAliensGameModalVertical">
               <div class="blur-image">
                 <img src="assets/images/game.jpg" class="card-img" alt="placeholder">
               </div>
@@ -284,7 +286,7 @@
         </div>
         <div class="row cardBuffer">
           <div class="offset-3 col-6">
-            <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#mazeSolverModal">
+            <div class="card-container d-xs-block d-sm-block d-md-block d-lg-none d-xl-none text-center border-3 rounded" data-bs-toggle="modal" data-bs-target="#mazeSolverModalVertical">
               <div class="blur-image">
                 <img src="assets/images/mazesolver.jpg" class="card-img" alt="placeholder">
               </div>
@@ -356,8 +358,113 @@
          </div>
       </div>
 
-      <!-- Unix Shell Modal -->
-      <div class="modal fade" id="unixShellModal" tabindex="-1" aria-labelledby="unixShellModalLabel" aria-hidden="true">
+            <!-- Unix Shell Modal Vertical -->
+      <div class="modal fade" id="unixShellModalVertical" tabindex="-1" aria-labelledby="unixShellModalLabelHVertical" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="unixShellModalLabel">Unix Shell</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <img src="assets/images/shell.jpg" alt="Unix Shell" class="modal-pic rounded img-fluid h-100 object-fit-cover">
+            <div class="modal-body">
+              <p class="text-center">C, Bash, Git</p>
+               <br>
+              <li>Developed a Unix shell in C, featuring custom scripting, I/O redirection, and built-in / parallel commands.</li>
+              <br>
+              <li>Utilized process management and multi-processing to run commands in parallel.</li>
+              <br>
+              <li>Implemented a custom testing harness to utilize test-driven development to ensure a robust program.</li>
+              <br>
+              <li>Designed a custom tokenizer to enhance command line parsing and error processing.</li>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <a href="https://github.com/Danpav1/shell" class="btn btn-primary" target="_blank">Github Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Website Modal Vertical -->
+      <div class="modal fade" id="portfolioWebsiteModalVertical" tabindex="-1" aria-labelledby="modal-pic portfolioWebsiteModalLabelVertical" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="unixShellModalLabel">Portfolio Website</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <img src="assets/images/portfolio.jpg" alt="Portfolio Website" class="rounded img-fluid h-100 object-fit-cover">
+            <div class="modal-body">
+              <p class="text-center">Bootstrap, HTML, CSS, Git</p>
+              <br>
+              <li>Incorporated Bootstrap to create a ”mobile-first” website that formats and looks great on all platforms.</li>
+              <br>
+              <li>Heavily utilized HTML and CSS to create an appealing, interactive design.</li>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <a href="https://github.com/Danpav1/DanPav1.github.io" class="btn btn-primary" target="_blank">Github Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Humans & Aliens Game Modal Vertical-->
+      <div class="modal fade" id="humansAliensGameModalVertical" tabindex="-1" aria-labelledby="humansAliensGameModalLabelVertical" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="unixShellModalLabel">Humans & Aliens Game</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <img src="assets/images/game.jpg" alt="Humans & Aliens Game" class="modal-pic rounded img-fluid h-100 object-fit-cover"> 
+            <div class="modal-body">
+               <p class="text-center">Java, Swing, JUnit, Gradle, Git</p>
+               <br>
+               <li>Developed an interactive UI using Java Swing to display and control our game.</li>
+              <br>
+              <li>Implemented High Level design patterns such as Strategy, Singleton, Factory, Command, Observer,
+               Adapter, State, Visitor, Iterator and Composite to promote re-usability and create robust code.</li>
+               <br>
+               <li>Developed using Test Driven Development, JUnit testing and custom exceptions to minimize bugs and ensure an organized and rugged game.</li>
+               <br>
+               <li>Extensively used git to coordinate and collaborate with our team.</li>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <a href="https://github.com/Danpav1/Humans-AliensGame" class="btn btn-primary" target="_blank">Github Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maze Solver Modal Vertical -->
+      <div class="modal fade" id="mazeSolverModalVertical" tabindex="-1" aria-labelledby="mazeSolverModalLabelVertical" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="unixShellModalLabel">Pathfinding Algorithm Visualizer</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <img src="assets/images/mazesolver.jpg" alt="Maze Solver" class="modal-pic rounded img-fluid h-100 object-fit-cover">
+            <div class="modal-body">
+              <p class="text-center">Java, Git</p>
+              <br>
+              <li>Developed different search algorithms such as Depth First Search and Flood Fill.</li>
+              <br>
+              <li>Utilized high level concepts within Object Oriented Programming such as Polymorphism, Inheritance,
+              Encapsulation and Abstraction to create adaptable and human readable code.</li>
+              <br>
+              <li>Implemented an intuitive UI with the ability to read in mazes from text files.</li>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <a href="https://github.com/Danpav1/MazeProgram" class="btn btn-primary" target="_blank">Github Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unix Shell Modal Horizontal -->
+      <div class="modal fade" id="unixShellModalHorizontal" tabindex="-1" aria-labelledby="unixShellModalLabelHorizontal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
@@ -387,8 +494,8 @@
         </div>
       </div>
 
-      <!-- Portfolio Website Modal -->
-      <div class="modal fade" id="portfolioWebsiteModal" tabindex="-1" aria-labelledby="modal-pic portfolioWebsiteModalLabel" aria-hidden="true">
+      <!-- Portfolio Website Modal Horizontal -->
+      <div class="modal fade" id="portfolioWebsiteModalHorizontal" tabindex="-1" aria-labelledby="modal-pic portfolioWebsiteModalLabelHorizontal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
@@ -415,8 +522,8 @@
       </div>
       </div>
 
-      <!-- Humans & Aliens Game Modal -->
-      <div class="modal fade" id="humansAliensGameModal" tabindex="-1" aria-labelledby="humansAliensGameModalLabel" aria-hidden="true">
+      <!-- Humans & Aliens Game Modal Horizontal-->
+      <div class="modal fade" id="humansAliensGameModalHorizontal" tabindex="-1" aria-labelledby="humansAliensGameModalLabelHorizontal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
@@ -447,8 +554,8 @@
         </div>
       </div>
 
-      <!-- Maze Solver Modal -->
-      <div class="modal fade" id="mazeSolverModal" tabindex="-1" aria-labelledby="mazeSolverModalLabel" aria-hidden="true">
+      <!-- Maze Solver Modal Horizontal -->
+      <div class="modal fade" id="mazeSolverModalHorizontal" tabindex="-1" aria-labelledby="mazeSolverModalLabelHorizontal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
