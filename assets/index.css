@@ -1,10 +1,10 @@
 /* constants start */
 
 :root {
-  --HEADER_COLOR: rgba(255,255,255,255);
-  --LIGHTBLUE_COLOR: rgba(209,230,254,255);
-  --OFFWHITE_COLOR: rgba(209,230,254,255);
-  --DEEPPURPLE_COLOR: rgb(8,12,28);
+  --HEADER_COLOR: rgba(255,255,255,1);
+  --LIGHTBLUE_COLOR: rgba(209,230,254,1);
+  --OFFWHITE_COLOR: rgba(234,227,213,1);
+  --DEEPPURPLE_COLOR: rgba(8,12,28,1);
   --LIGHTPURPLE_COLOR: #38456C;
 
 }
@@ -252,10 +252,45 @@ body {
   border-color: #0e5bea;
 }
 
-/* -- new section -- */
+/* -- modals -- */
 
 .footer {
   margin-top:120px;
   margin-bottom: 45px;
+}
+
+.modal-content {
+  background-color: var(--LIGHTBLUE_COLOR);
+  border: 2px solid var(--LIGHTPURPLE_COLOR);
+}
+
+.modal-header {
+  font-family: "AxiformaBold", Helvetica;
+  color:black;
+  font-size: 15px;
+}
+
+.modal-title {
+  font-size: 35px;
+}
+
+.modal-body {
+  font-family: "AxiformaLight", Helvetica;
+  color:black;
+  font-size: 17px;
+}
+
+.modal-footer {
+  font-family: "AxiformaBold", Helvetica;
+  color:black;
+  font-size: 28px;
+}
+
+.object-fit-cover {
+  object-fit: cover; /* Ensure the image covers the area without losing its aspect ratio */
+}
+
+.modal-pic {
+  border: 2px solid var(--LIGHTPURPLE_COLOR);
 }
 
