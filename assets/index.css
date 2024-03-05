@@ -264,6 +264,7 @@ body {
   border: 2px solid var(--LIGHTPURPLE_COLOR);
 }
 
+
 .modal-header {
   font-family: "AxiformaBold", Helvetica;
   color:black;
@@ -271,13 +272,14 @@ body {
 }
 
 .modal-title {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .modal-body {
   font-family: "AxiformaLight", Helvetica;
   color:black;
-  font-size: 17px;
+  font-size: 21px;
+  line-height: 1.6;
 }
 
 .modal-footer {
