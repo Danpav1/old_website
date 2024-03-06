@@ -4,17 +4,18 @@
 <head>
   <title>Daniel Pavenko's Portfolio</title>
   <script>src="assets/index.js"</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/7d3fe6eee2.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="assets/images/face.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta charSet="UTF-8">
-  <meta name="description" content="Portfolio website I made to practically learn Bootstrap, HTML and
+  <meta name="description" content="Portfolio website I made to practically learn Bootstrap, Tailwind. HTML and
   CSS.">
   <meta author="Daniel Pavenko">
-  <meta keywords="Daniel, daniel, Dan, dan, Pavenko, pavenko, Daniel Pavenko, dan pavenko, Daniel pavenko, Portfolio">
+  <meta keywords="Dan Pavenko, Daniel Pavenko, Portfolio">
 </head>
 
 <div class="container-fluid">
@@ -310,29 +311,30 @@
           <div class="offset-2 col-8">
             <h2 id="contactHeader">Lets create awesome products!</h2>
             <p id="contactInner">I'm always open to discuss projects and opportunities.</p>
+            <br>
           </div>
         </div>
         <!-- md, lg, xl -->
         <div class="row-fluid d-none d-md-block d-lg-block d-xl-block text-center">
           <div class="offset-2 col-8">
-            <a type="button" class="btn btn-block btn-primary col-2"
+            <a type="button" class="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition ease-in-out duration-600"
             href="mailto:pavenkodanielofficial@hotmail.com"> <span id="mailButton">Contact</span></a>
             <span style="padding-left: 10px;"></span>
-            <a type="button" class="btn btn-block btn-primary col-2"
+            <a type="button" class="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition ease-in-out duration-600"
             href="assets/downloadable/resume.pdf" target="_blank"> <span id="resumeButton">Resume </span></a>
           </div>
         </div>
         <!-- sm, xs -->
          <div class="row-fluid d-xs-block d-sm-block d-md-none d-lg-none d-xl-none text-center">
            <div class="offset-2 col-8">
-            <a type="button" class="btn btn-block btn-primary col-4"
-            href="mailto:pavenkodanielofficial@hotmail.com"> <span id="mailButtonSm">Hire me</span></a>
+            <a type="button" class="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition ease-in-out duration-600"
+            href="mailto:pavenkodanielofficial@hotmail.com"> <span id="mailButtonSm">Contact</span></a>
           </div>
         </div>
         <!-- sm, xs -->
         <div class="row-fluid d-xs-block d-sm-block d-md-none d-lg-none d-xl-none text-center buttonBuffer">
           <div class="offset-2 col-8">
-            <a type="button" class="btn btn-block btn-primary col-4"
+            <a type="button" class="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition ease-in-out duration-600"
             href="assets/downloadable/resume.pdf" target="_blank"> <span id="resumeButtonSm">Resume </span></a>
           </div>
         </div>
@@ -341,19 +343,24 @@
 <!-- ----------------------------------------------------------------------------------------------------------------------- -->
             
       <div class="footer">
-        <div class="row-fluid text-center">
-          <div class="offset-2 col-8">
-             <a href="https://github.com/Danpav1" target="_blank" style="text-decoration: none;">
-              <span style="color:rgba(209,230,254,255); font-size: 1.5em;">
-                <i class="fa fa-github"></i>
-              </span>
-            </a>
-            <span style="padding-left: 40px;"></span>
-            <a href="https://www.linkedin.com/in/dan-pavenko" target="_blank" style="text-decoration: none;">
-              <span style="color:rgba(209,230,254,255); font-size: 1.5em;">
-                <i class="fa fa-linkedin"></i>
-              </span>
-             </a>
+        <div class="row text-center">
+          <div class="offset-5 col-1">
+            <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+              <a href="https://github.com/Danpav1" target="_blank" style="text-decoration: none;">
+                <span style="color:rgba(209,230,254,255); font-size: 1.5em;">
+                  <i class="fa fa-github"></i>
+                </span>
+              </a>
+            </button>
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+              <a href="https://www.linkedin.com/in/dan-pavenko" target="_blank" style="text-decoration: none;">
+                <span style="color:rgba(209,230,254,255); font-size: 1.5em;">
+                  <i class="fa fa-linkedin"></i>
+                </span>
+              </a>
+            </button>
           </div>
          </div>
       </div>
@@ -364,7 +371,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Unix Shell</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
             </div>
               <img src="assets/images/shell.jpg" alt="Unix Shell" class="modal-pic rounded img-fluid h-100 object-fit-cover">
               <div style="height: 2px; background-color: rgba(255, 255, 255, 0.5);"></div>
@@ -392,7 +401,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Portfolio Website</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
             </div>
               <img src="assets/images/portfolio.jpg" alt="Portfolio Website" class="rounded img-fluid h-100 object-fit-cover">
             <div class="modal-body">
@@ -416,7 +427,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Humans & Aliens Game</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
             </div>
               <img src="assets/images/game.jpg" alt="Humans & Aliens Game" class="modal-pic rounded img-fluid h-100 object-fit-cover"> 
             <div class="modal-body">
@@ -444,7 +457,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Pathfinding Algorithm Visualizer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
             </div>
               <img src="assets/images/mazesolver.jpg" alt="Maze Solver" class="modal-pic rounded img-fluid h-100 object-fit-cover">
             <div class="modal-body">
@@ -470,7 +485,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Unix Shell</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
            </div>
             <div class="modal-body row">
               <div class="col-md-6">
@@ -501,7 +518,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Portfolio Website</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
             </div>
             <div class="modal-body row">
               <div class="col-md-6">
@@ -529,7 +548,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Humans & Aliens Game</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
            </div>
             <div class="modal-body row">
               <div class="col-md-6">
@@ -561,7 +582,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="unixShellModalLabel">Pathfinding Algorithm Visualizer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white p-1 rounded inline-flex items-center justify-center" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
            </div>
             <div class="modal-body row">
               <div class="col-md-6">
@@ -583,10 +606,8 @@
             </div>
           </div>
         </div>
-      </div>
-            
+      </div>   
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

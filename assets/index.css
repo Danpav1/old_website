@@ -173,8 +173,8 @@ body {
 
 .blur-image img {
   width: 100%;
-  filter: blur(0); /* Initialize blur to 0 (no blur) */
-  transition: filter 0.3s; /* Add a smooth transition for the blur effect */
+  filter: blur(0); 
+  transition: filter 0.3s; 
 }
 
 .card-container .centered-text {
@@ -186,18 +186,18 @@ body {
   color: white;
   font-size: 19px;
   line-height: 125%;
-  z-index: 2; /* Place the text above the blur effect */
+  z-index: 2; 
   pointer-events: none;
-  opacity: 0; /* Initially hide the text */
-  transition: opacity 0.3s; /* Add a smooth opacity transition */
+  opacity: 0; 
+  transition: opacity 0.3s; 
 }
 
 .card-container:hover .blur-image img {
-  filter: blur(5px); /* Apply a blur effect to the image on hover */
+  filter: blur(5px); 
 }
 
 .card-container:hover .centered-text {
-  opacity: 1; /* Show the text on hover */
+  opacity: 1; 
 }
 
 /* -- new section -- */
@@ -240,18 +240,6 @@ body {
   font-size: 3vw;
 }
 
-/* custom css for btn-primary to change default color and hover  color */
-.btn-primary {
-  color: white;
-  background-color: #0c2d98;
-  border-color: #0c2d98;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-  color: white;
-  background-color: #0e5bea;
-  border-color: #0e5bea;
-}
-
 /* -- modals -- */
 
 .footer {
@@ -290,7 +278,7 @@ body {
 }
 
 .object-fit-cover {
-  object-fit: cover; /* Ensure the image covers the area without losing its aspect ratio */
+  object-fit: cover; 
 }
 
 .modal-pic {
