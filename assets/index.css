@@ -3,7 +3,7 @@
 :root {
   --HEADER_COLOR: rgba(255,255,255,1);
   --LIGHTBLUE_COLOR: rgba(209,230,254,1);
-  --OFFWHITE_COLOR: rgba(234,227,213,1);
+  --OFFWHITE_COLOR: #f5f5f5;
   --DEEPPURPLE_COLOR: rgba(8,12,28,1);
   --LIGHTPURPLE_COLOR: #38456C;
 
@@ -199,7 +199,6 @@ body {
 .card-container:hover .centered-text {
   opacity: 1; 
 }
-
 /* -- new section -- */
 
 #contactHeader {
