@@ -260,17 +260,15 @@ body {
 }
 
 .modal-content {
-  background-color: rgba(50, 50, 50, 1);
+  background: linear-gradient(to bottom left, #000080, var(--LIGHTPURPLE_COLOR));
   border: 2px solid black;
 }
 
-
 .modal-header {
   font-family: "AxiformaBold", Helvetica;
-  background-color: var(--LIGHTPURPLE_COLOR);
-  border-color: rgba(255,255,255,0.1);
   color:white;
   font-size: 38px;
+  border: rgba(255, 255, 255, 0.3);
 }
 
 .modal-title {
@@ -285,11 +283,10 @@ body {
 }
 
 .modal-footer {
-  border-color: rgba(255,255,255,0.1);
-  background-color: var(--LIGHTPURPLE_COLOR);
   font-family: "AxiformaBold", Helvetica;
   color:white;
   font-size: 28px;
+  border: rgba(255, 255, 255, 0.3);
 }
 
 .object-fit-cover {
